@@ -47,6 +47,7 @@ new_text = text.replace("Goodbye", "Hi")  # new_text will be "Hello world" (no c
 text = "The quick brown fox jumps over the Lazy Dog"
 new_text = text.replace("the", "a")  # new_text will be "The quick brown fox jumps over a Lazy Dog" (only the lowercase "the" is 
 
+
 third commit
 # Uppercase String Utility
 
