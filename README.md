@@ -86,3 +86,40 @@ if __name__ == "__main__":
 - The function does not modify the original string (strings in Python are immutable).
 - It works with any string input, including mixed-case or special characters.
 
+
+fourth commit
+# Lowercase String Utility
+
+"""
+## Overview
+This module provides a function to convert a string to lowercase using Python's built-in `lower()` method.
+
+## Features
+- Converts all uppercase letters to lowercase.
+- Leaves non-alphabetic characters unchanged.
+- Useful for text standardization and case-insensitive comparisons.
+
+## Function Definition
+```python
+def to_lowercase(text: str) -> str:
+    """Converts the given string to lowercase."""
+    return text.lower()
+```
+
+## Example Usage
+```python
+if __name__ == "__main__":
+    sample_text = "HELLO WORLD"
+    print(to_lowercase(sample_text))  # Output: "hello world"
+```
+
+## Use Cases
+- Formatting user input for consistency.
+- Making case-insensitive string comparisons.
+- Standardizing text data for storage and retrieval.
+
+## Notes
+- The function does not modify the original string (strings in Python are immutable).
+- It works with any string input, including mixed-case, numbers, or special characters.
+"""
+
