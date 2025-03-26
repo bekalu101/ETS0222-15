@@ -123,3 +123,40 @@ if __name__ == "__main__":
 - It works with any string input, including mixed-case, numbers, or special characters.
 """
 
+
+fifth commit
+# Title Case String Utility
+
+"""
+## Overview
+This module provides a function to convert a string to title case using Python's built-in `title()` method.
+
+## Features
+- Capitalizes the first letter of each word.
+- Converts the rest of the letters in each word to lowercase.
+- Useful for formatting titles, names, and headings.
+
+## Function Definition
+```python
+def to_title_case(text: str) -> str:
+    """Converts the given string to title case."""
+    return text.title()
+```
+
+## Example Usage
+```python
+if __name__ == "__main__":
+    sample_text = "hello world from python"
+    print(to_title_case(sample_text))  # Output: "Hello World From Python"
+```
+
+## Use Cases
+- Formatting names, titles, and headings.
+- Standardizing text for readability.
+- Enhancing text presentation in documents and applications.
+
+## Notes
+- The function does not modify the original string (strings in Python are immutable).
+- Works best with standard sentence formatting but may not handle special cases like "McDonald's" correctly.
+"""
+
