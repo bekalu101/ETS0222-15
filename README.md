@@ -255,3 +255,52 @@ if __name__ == "__main__":
 ## Notes
 - The function does not modify the original string (strings in Python are immutable).
 - Works with any string input, including spaces, numbers, or special characters.
+
+
+
+eight commit
+# Lstrip String Utility
+
+"""
+## Overview
+This module provides a function to remove leading spaces (spaces from the left side) from a string using Python's built-in `lstrip()` method.
+
+## Features
+- Removes **leading spaces** (spaces at the beginning of the string).
+- Leaves **trailing spaces** and spaces between words **unchanged**.
+- Useful for cleaning up user input or formatting text data.
+
+## Function Definition
+```python
+def lstrip_text(text: str) -> str:
+    """Removes leading spaces from a string."""
+    return text.lstrip()
+```
+
+## Example Usage
+```python
+if __name__ == "__main__":
+    # Example 1: Basic trimming from the left
+    sample_text = "   Hello World   "
+    print(lstrip_text(sample_text))  # Output: "Hello World   "
+
+    # Example 2: String with only spaces
+    sample_text = "      "
+    print(lstrip_text(sample_text))  # Output: "" (Empty string)
+
+    # Example 3: String with spaces in between words
+    sample_text = "  Python Programming  "
+    print(lstrip_text(sample_text))  # Output: "Python Programming  "
+```
+
+## Use Cases
+- Cleaning user input to remove unintended leading spaces.
+- Formatting text data for consistency.
+- Preprocessing text before storing in a database.
+- Standardizing output for better readability.
+
+## Notes
+- The function does not modify the original string (strings in Python are immutable).
+- Works with any string input, including spaces, numbers, or special characters.
+"""
+
