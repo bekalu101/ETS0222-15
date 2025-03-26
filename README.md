@@ -160,3 +160,98 @@ if __name__ == "__main__":
 - Works best with standard sentence formatting but may not handle special cases like "McDonald's" correctly.
 """
 
+
+six commite
+# Swapcase String Utility
+
+"""
+## Overview
+This module provides a function to swap the case of letters in a string using Python's built-in `swapcase()` method.
+
+## Features
+- Converts **uppercase letters** to **lowercase**.
+- Converts **lowercase letters** to **uppercase**.
+- Leaves non-alphabetic characters unchanged.
+- Useful for toggling text case and formatting.
+
+## Function Definition
+```python
+def swap_case(text: str) -> str:
+    """Swaps uppercase and lowercase letters in a string."""
+    return text.swapcase()
+```
+
+## Example Usage
+```python
+if __name__ == "__main__":
+    # Example 1: Basic case swapping
+    sample_text = "Hello World"
+    print(swap_case(sample_text))  # Output: "hELLO wORLD"
+
+    # Example 2: Mixed case
+    sample_text = "PyThOn PrOgRaMmInG"
+    print(swap_case(sample_text))  # Output: "pYtHoN pRoGrAmMiNg"
+
+    # Example 3: String with numbers and symbols
+    sample_text = "123 Hello!"
+    print(swap_case(sample_text))  # Output: "123 hELLO!"
+```
+
+## Use Cases
+- Formatting text to alternate between cases.
+- Improving readability in special applications.
+- Processing text for encryption or coding puzzles.
+- Creating stylistic text for display purposes.
+
+## Notes
+- The function does not modify the original string (strings in Python are immutable).
+- Works with any string input, including mixed-case, numbers, or special characters.
+
+"""
+
+
+seven commit
+# Strip String Utility
+
+"""
+## Overview
+This module provides a function to remove leading and trailing spaces from a string using Python's built-in `strip()` method.
+
+## Features
+- Removes **leading spaces** (spaces at the beginning of the string).
+- Removes **trailing spaces** (spaces at the end of the string).
+- Leaves spaces between words **unchanged**.
+- Useful for cleaning up user input or formatting text data.
+
+## Function Definition
+```python
+def strip_text(text: str) -> str:
+    """Removes leading and trailing spaces from a string."""
+    return text.strip()
+```
+
+## Example Usage
+```python
+if __name__ == "__main__":
+    # Example 1: Basic trimming
+    sample_text = "   Hello World   "
+    print(strip_text(sample_text))  # Output: "Hello World"
+
+    # Example 2: String with only spaces
+    sample_text = "      "
+    print(strip_text(sample_text))  # Output: "" (Empty string)
+
+    # Example 3: String with spaces in between words
+    sample_text = "  Python Programming  "
+    print(strip_text(sample_text))  # Output: "Python Programming"
+```
+
+## Use Cases
+- Cleaning user input to remove unintended spaces.
+- Formatting text data for consistency.
+- Preprocessing text before storing in a database.
+- Standardizing output for better readability.
+
+## Notes
+- The function does not modify the original string (strings in Python are immutable).
+- Works with any string input, including spaces, numbers, or special characters.
