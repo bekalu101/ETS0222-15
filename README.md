@@ -351,3 +351,50 @@ if __name__ == "__main__":
 - Works with any string input, including spaces, numbers, or special characters.
 """
 
+
+tenth commit
+# Zfill String Utility
+
+"""
+## Overview
+This module provides a function to pad a string with leading zeros to reach a specified width using Python's built-in `zfill()` method.
+
+## Features
+- Pads the string with leading zeros until it reaches the specified width.
+- Retains existing characters without modification.
+- Useful for formatting numbers, aligning text, and ensuring uniform string length.
+
+## Function Definition
+```python
+def zfill_text(text: str, width: int) -> str:
+    """Pads the string with leading zeros to reach the given width."""
+    return text.zfill(width)
+```
+
+## Example Usage
+```python
+if __name__ == "__main__":
+    # Example 1: Padding a number string
+    sample_text = "42"
+    print(zfill_text(sample_text, 5))  # Output: "00042"
+
+    # Example 2: Padding a longer string (no change if already equal or greater than width)
+    sample_text = "hello"
+    print(zfill_text(sample_text, 3))  # Output: "hello"
+
+    # Example 3: Padding a negative number
+    sample_text = "-42"
+    print(zfill_text(sample_text, 5))  # Output: "-0042"
+```
+
+## Use Cases
+- Formatting numerical values for display (e.g., invoice numbers, serial codes).
+- Ensuring fixed-length strings for data processing.
+- Standardizing input fields where a specific width is required.
+
+## Notes
+- The function does not modify the original string (strings in Python are immutable).
+- Works with both numeric and non-numeric strings.
+- If the string already meets or exceeds the specified width, no padding is applied.
+"""
+
