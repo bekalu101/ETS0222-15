@@ -398,7 +398,6 @@ if __name__ == "__main__":
 - If the string already meets or exceeds the specified width, no padding is applied.
 """
 
-
 eleventh commit
 # Center String Utility
 
@@ -438,6 +437,52 @@ if __name__ == "__main__":
 - Formatting headers in text-based applications.
 - Aligning text in table-like structures.
 - Enhancing the visual appearance of printed or displayed text.
+
+## Notes
+- The function does not modify the original string (strings in Python are immutable).
+- If the specified width is smaller than the string length, no padding is applied.
+- The padding character must be a single character string.
+"""
+
+tweleveth commit
+# Rjust String Utility
+
+"""
+## Overview
+This module provides a function to right-align a string within a specified width using a given padding character, utilizing Python's built-in `rjust()` method.
+
+## Features
+- Right-aligns the string within the specified width.
+- Pads with a specified character to fill the extra space.
+- Useful for formatting output and aligning text in tables or UI displays.
+
+## Function Definition
+```python
+def rjust_text(text: str, width: int, char: str = ' ') -> str:
+    """Right-aligns the string within the given width using the specified padding character."""
+    return text.rjust(width, char)
+```
+
+## Example Usage
+```python
+if __name__ == "__main__":
+    # Example 1: Right-aligning with default space padding
+    sample_text = "Hello"
+    print(rjust_text(sample_text, 10))  # Output: "     Hello"
+
+    # Example 2: Right-aligning with custom padding character
+    sample_text = "Python"
+    print(rjust_text(sample_text, 12, '*'))  # Output: "******Python"
+
+    # Example 3: Width smaller than string length (no change)
+    sample_text = "LongText"
+    print(rjust_text(sample_text, 5, '-'))  # Output: "LongText"
+```
+
+## Use Cases
+- Formatting numerical values for alignment.
+- Aligning text in reports, tables, or console output.
+- Ensuring consistent text layout in text-based applications.
 
 ## Notes
 - The function does not modify the original string (strings in Python are immutable).
