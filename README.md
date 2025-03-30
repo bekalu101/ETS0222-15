@@ -582,3 +582,53 @@ if __name__ == "__main__":
 - Indexing starts at `0`, meaning the first character of the string has index `0`.
 - If multiple occurrences exist, only the index of the first one is returned.
 """
+
+fifteen commit
+# Index String Utility
+
+"""
+## Overview
+This module provides a function to locate the first occurrence of a substring within a string using Python's built-in `index()` method.
+
+## Features
+- Returns the index of the first occurrence of a substring.
+- Raises a `ValueError` if the substring is not found.
+- Useful for searching and extracting data from text.
+
+## Function Definition
+```python
+def index_substring(text: str, substring: str) -> int:
+    """Finds the first occurrence of a substring and returns its index, or raises an error if not found."""
+    return text.index(substring)
+```
+
+## Example Usage
+```python
+if __name__ == "__main__":
+    # Example 1: Substring found
+    sample_text = "Hello, welcome to Python programming."
+    print(index_substring(sample_text, "Python"))  # Output: 18
+
+    # Example 2: Substring not found (raises ValueError)
+    try:
+        print(index_substring(sample_text, "Java"))  # Raises ValueError
+    except ValueError:
+        print("Substring not found!")
+
+    # Example 3: Searching for a single character
+    print(index_substring(sample_text, "w"))  # Output: 7
+
+    # Example 4: Searching for a word at the beginning
+    print(index_substring(sample_text, "Hello"))  # Output: 0
+```
+
+## Use Cases
+- Ensuring a substring exists before processing it.
+- Extracting parts of text based on keyword position.
+- Implementing precise search functionality in text-processing applications.
+
+## Notes
+- The function does not modify the original string (strings in Python are immutable).
+- Indexing starts at `0`, meaning the first character of the string has index `0`.
+- If the substring is not found, a `ValueError` is raised.
+"""
