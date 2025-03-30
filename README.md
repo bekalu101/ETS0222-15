@@ -536,3 +536,49 @@ if __name__ == "__main__":
 - The padding character must be a single character string.
 """
 
+fourteen commit
+# Find String Utility
+
+"""
+## Overview
+This module provides a function to locate the first occurrence of a substring within a string using Python's built-in `find()` method.
+
+## Features
+- Returns the index of the first occurrence of a substring.
+- Returns `-1` if the substring is not found.
+- Useful for searching and extracting data from text.
+
+## Function Definition
+```python
+def find_substring(text: str, substring: str) -> int:
+    """Finds the first occurrence of a substring and returns its index, or -1 if not found."""
+    return text.find(substring)
+```
+
+## Example Usage
+```python
+if __name__ == "__main__":
+    # Example 1: Substring found
+    sample_text = "Hello, welcome to Python programming."
+    print(find_substring(sample_text, "Python"))  # Output: 18
+
+    # Example 2: Substring not found
+    print(find_substring(sample_text, "Java"))  # Output: -1
+
+    # Example 3: Searching for a single character
+    print(find_substring(sample_text, "w"))  # Output: 7
+
+    # Example 4: Searching for a word at the beginning
+    print(find_substring(sample_text, "Hello"))  # Output: 0
+```
+
+## Use Cases
+- Checking if a specific word exists in a string.
+- Extracting parts of a text based on keyword position.
+- Implementing basic search functionality in text-processing applications.
+
+## Notes
+- The function does not modify the original string (strings in Python are immutable).
+- Indexing starts at `0`, meaning the first character of the string has index `0`.
+- If multiple occurrences exist, only the index of the first one is returned.
+"""
