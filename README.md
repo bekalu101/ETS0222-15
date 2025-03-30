@@ -489,3 +489,50 @@ if __name__ == "__main__":
 - If the specified width is smaller than the string length, no padding is applied.
 - The padding character must be a single character string.
 """
+
+thirteen commit
+# Ljust String Utility
+
+"""
+## Overview
+This module provides a function to left-align a string within a specified width using a given padding character, utilizing Python's built-in `ljust()` method.
+
+## Features
+- Left-aligns the string within the specified width.
+- Pads with a specified character to fill the extra space.
+- Useful for formatting output and aligning text in tables or UI displays.
+
+## Function Definition
+```python
+def ljust_text(text: str, width: int, char: str = ' ') -> str:
+    """Left-aligns the string within the given width using the specified padding character."""
+    return text.ljust(width, char)
+```
+
+## Example Usage
+```python
+if __name__ == "__main__":
+    # Example 1: Left-aligning with default space padding
+    sample_text = "Hello"
+    print(ljust_text(sample_text, 10))  # Output: "Hello     "
+
+    # Example 2: Left-aligning with custom padding character
+    sample_text = "Python"
+    print(ljust_text(sample_text, 12, '*'))  # Output: "Python******"
+
+    # Example 3: Width smaller than string length (no change)
+    sample_text = "LongText"
+    print(ljust_text(sample_text, 5, '-'))  # Output: "LongText"
+```
+
+## Use Cases
+- Formatting text output for alignment.
+- Aligning text in tables, reports, or console output.
+- Ensuring consistent text layout in text-based applications.
+
+## Notes
+- The function does not modify the original string (strings in Python are immutable).
+- If the specified width is smaller than the string length, no padding is applied.
+- The padding character must be a single character string.
+"""
+
