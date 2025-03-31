@@ -679,3 +679,48 @@ if __name__ == "__main__":
 - Indexing starts at 0, meaning the first character of the string has index 0.
 - If multiple occurrences exist, only the index of the last one is returned.
 """
+
+seventeen commit
+# Replace String Utility
+
+"""
+## Overview
+This module provides a function to replace all occurrences of a substring within a string using Python's built-in `replace()` method.
+
+## Features
+- Replaces all occurrences of a specified substring with another.
+- Returns a new string with replacements applied.
+- Useful for text modifications and data cleaning.
+
+## Function Definition
+```python
+def replace_substring(text: str, old: str, new: str) -> str:
+    """Replaces all occurrences of a substring with another."""
+    return text.replace(old, new)
+```
+
+## Example Usage
+```python
+if __name__ == "__main__":
+    # Example 1: Basic replacement
+    sample_text = "Hello, world!"
+    print(replace_substring(sample_text, "world", "Python"))  # Output: "Hello, Python!"
+
+    # Example 2: Replacing multiple occurrences
+    sample_text = "apple banana apple cherry apple"
+    print(replace_substring(sample_text, "apple", "orange"))  # Output: "orange banana orange cherry orange"
+
+    # Example 3: Removing a word by replacing with an empty string
+    sample_text = "Remove this word"
+    print(replace_substring(sample_text, "Remove ", ""))  # Output: "this word"
+```
+
+## Use Cases
+- Correcting spelling or formatting mistakes.
+- Standardizing text data for consistency.
+- Removing unwanted words or characters from strings.
+
+## Notes
+- The function does not modify the original string (strings in Python are immutable).
+- Replacements are case-sensitive.
+- If the `old` substring is not found, the original string remains unchanged.
