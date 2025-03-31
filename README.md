@@ -632,3 +632,50 @@ if __name__ == "__main__":
 - Indexing starts at `0`, meaning the first character of the string has index `0`.
 - If the substring is not found, a `ValueError` is raised.
 """
+
+sixteen commit
+# Rfind String Utility
+
+"""
+## Overview
+This module provides a function to locate the last occurrence of a substring within a string using Python's built-in `rfind()` method.
+
+## Features
+- Returns the index of the last occurrence of a substring.
+- Returns `-1` if the substring is not found.
+- Useful for reverse searching within text data.
+
+## Function Definition
+```python
+def rfind_substring(text: str, substring: str) -> int:
+    """Finds the last occurrence of a substring and returns its index, or -1 if not found."""
+    return text.rfind(substring)
+```
+
+## Example Usage
+```python
+if __name__ == "__main__":
+    # Example 1: Substring found multiple times
+    sample_text = "Python is fun, and learning Python is great!"
+    print(rfind_substring(sample_text, "Python"))  # Output: 27
+
+    # Example 2: Substring not found
+    print(rfind_substring(sample_text, "Java"))  # Output: -1
+
+    # Example 3: Searching for a single character
+    print(rfind_substring(sample_text, "n"))  # Output: 36
+
+    # Example 4: Searching for a word at the beginning
+    print(rfind_substring(sample_text, "fun"))  # Output: 10
+```
+
+## Use Cases
+- Finding the last occurrence of a keyword in a document.
+- Extracting text from the last instance of a specific delimiter.
+- Reverse searching for patterns in log files or reports.
+
+## Notes
+- The function does not modify the original string (strings in Python are immutable).
+- Indexing starts at 0, meaning the first character of the string has index 0.
+- If multiple occurrences exist, only the index of the last one is returned.
+"""
