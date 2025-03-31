@@ -724,3 +724,48 @@ if __name__ == "__main__":
 - The function does not modify the original string (strings in Python are immutable).
 - Replacements are case-sensitive.
 - If the `old` substring is not found, the original string remains unchanged.
+
+eighteen commit
+# Count String Utility
+
+"""
+## Overview
+This module provides a function to count the number of times a substring appears within a string using Python's built-in `count()` method.
+
+## Features
+- Counts the number of non-overlapping occurrences of a specified substring.
+- Returns an integer representing the number of occurrences.
+- Useful for text analysis and frequency calculations.
+
+## Function Definition
+```python
+def count_substring(text: str, substring: str) -> int:
+    """Counts occurrences of a substring within a string."""
+    return text.count(substring)
+```
+
+## Example Usage
+```python
+if __name__ == "__main__":
+    # Example 1: Counting occurrences
+    sample_text = "apple banana apple cherry apple"
+    print(count_substring(sample_text, "apple"))  # Output: 3
+
+    # Example 2: Substring not found
+    sample_text = "Hello, world!"
+    print(count_substring(sample_text, "Python"))  # Output: 0
+
+    # Example 3: Case-sensitive counting
+    sample_text = "Hello hello HELLO"
+    print(count_substring(sample_text, "Hello"))  # Output: 1
+```
+
+## Use Cases
+- Analyzing the frequency of words in a document.
+- Counting occurrences of keywords in text analysis.
+- Detecting repeated patterns in strings.
+
+## Notes
+- The function does not modify the original string (strings in Python are immutable).
+- The search is case-sensitive (`"hello"` and `"Hello"` are treated differently).
+- If the substring is not found, the method returns `0`.
