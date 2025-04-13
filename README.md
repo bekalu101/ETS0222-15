@@ -11,3 +11,9 @@ Adds elements from another list (or iterable) to the end of the current list.
 Returns the index of the first item with the specified value.
 6 remove()
 Removes the first occurrence of a specified value.
+7 reverse()
+Reverses the order of the list.
+8 sort()
+Sorts the list in ascending order (modifies the list in-place).
+9 count()
+Returns the number of times a specified value occurs in the list.
