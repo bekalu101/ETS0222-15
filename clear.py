@@ -1,2 +1,0 @@
-person.clear()
-print(person)  # {}

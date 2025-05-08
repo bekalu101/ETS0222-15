@@ -1,2 +1,3 @@
-person.update({'gender': 'Female'})
-print(person)  # {'name': 'Alice', 'age': 25, 'gender': 'Female'}
+s = {1, 2}
+s.update([3, 4])
+print(s)  # Output: {1, 2, 3, 4}

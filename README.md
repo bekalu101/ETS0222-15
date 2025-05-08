@@ -1,20 +1,10 @@
- get()
-Returns the value for a key if it exists, else returns a default.
- keys()
-Returns a view object of all keys.
- values()
-Returns a view object of all values.
- items()
-Returns a view object of (key, value) pairs.
- update()
-Updates dictionary with key-value pairs from another dictionary.
- pop()
-Removes a key and returns its value.
-popitem()
-Removes and returns the last inserted key-value pair.
- clear()
-Removes all items from the dictionary.
- setdefault()
-Returns value if key exists, else sets key with a default value.
-copy()
-Returns a shallow copy of the dictionary.
+1. add()
+Adds a single element to a set.
+2. update()
+Adds multiple elements (from another iterable) to a set.
+3. remove()
+Removes a specific element; raises error if not found.
+4. discard()
+Removes a specific element; no error if element not found.
+5. pop()
+Removes and returns a random element.

@@ -1,3 +1,3 @@
-age = person.pop('age')
-print(age)      # 25
-print(person)   # {'name': 'Alice', 'gender': 'Female'}
+s = {1, 2, 3}
+s.pop()
+print(s)  # Output: set without one random element
